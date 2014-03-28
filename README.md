@@ -31,13 +31,13 @@ then, logger outputs logs to the specified URL.
 ```php
 $fileAppender = new \PHPMake\Logger('file:///tmp/app.log');
 ```
-Constructor's second argument can be specified file opening mode. Default mode is 'a' which means to 'append'.  
-If you passed 'w' as second argument, specified file will be empty at first. Or passed 'r', you will get warnings when each output.
+Constructor's second argument can be specified file opening mode. Default mode is ```a``` which means to 'append'.  
+If you passed ```w``` as second argument, specified file will be empty at first. Or passed ```r```, you will get warnings when each output.
 
 
 Logging
 -------
-This logger implements \Psr\Log\Logger interface. Therefore, call these methods for logging.
+This logger implements ```\Psr\Log\Logger interface```. Therefore, call these methods for logging.
 
 ```php
 $logger->debug('debug');
@@ -51,7 +51,7 @@ $logger->emergency('emergency');
 ```
 
 ### threshold
-setThreshold() method is provide to control outputs with log level.
+```setThreshold()``` method is provide to control outputs with log level.
 
 ```php
 $logger = new \PHPMake\Logger();
