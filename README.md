@@ -30,6 +30,8 @@ then, logger outputs logs to the specified URL.
 
 ```php
 $fileAppender = new \PHPMake\Logger('file:///tmp/app.log');
+// or
+// $fileAppender = new \PHPMake\Logger('file:///tmp/app.log', 'a');
 ```
 Constructor's second argument can be specified file opening mode. Default mode is ```a``` which means to 'append'.  
 If you passed ```w``` as second argument, specified file will be empty at first. Or passed ```r```, you will get warnings when each output.
