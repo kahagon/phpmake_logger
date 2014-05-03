@@ -54,7 +54,7 @@ class Logger extends Log\AbstractLogger {
         }
 
         $text = self::interpolate($message, $context);
-        fwrite($this->_stream, $text);
+        fwrite($this->_stream, $text . "\n");
         fflush($this->_stream);
     }
 
